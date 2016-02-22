@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="asset/ico/favicon.ico">
+<title>Frontend Assessment</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,600,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="asset/css/style.css" rel="stylesheet">
+<link href="asset/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<header>
+		<div class="top-info">
+			<div class="container">
+				<div class="grid">
+					<div class="col-1-2">
+						<div class="topinfo-content left">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Properties</a></li>
+							</ul><div class="clear"></div>
+						</div><!-- end .topinfo-content -->
+					</div>
+					<div class="col-1-2">
+						<div class="topinfo-content right">
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Register</a></li>
+							</ul><div class="clear"></div>
+						</div><!-- end .topinfo-content -->
+					</div>
+				</div><!-- end .grid -->
+			</div><!-- end .container -->
+		</div><!-- end .top-info -->
+		<div class="clear"></div>
+		<div class="top-middle">
+			<div class="container">
+				<div class="grid">
+					<div class="col-1-2">
+						<h1>Realty.com</h1>
+					</div><!-- end .col-1-2 -->
+					<div class="col-1-2">
+						<div class="grid topmiddle-content right">
+							<div class="col-1-3">
+								<div class="desc">
+									<i class="fa fa-map-marker"></i>Oak Street 723
+								</div>
+								<span>San Fransisco, California</span>
+							</div><!-- end .col-1-3 -->
+							<div class="col-1-3">
+								<div class="desc">
+									<i class="fa fa-phone"></i>+123-456-789
+								</div>
+								<span>info@realty.com</span>
+							</div><!-- end .col-1-3 -->
+							<div class="col-1-3">
+								<div class="desc">
+									<i class="fa fa-clock-o"></i>Monday - Friday
+								</div>
+								<span>9:00 - 17:00</span>
+							</div><!-- end .col-1-3 -->
+						</div><!-- end .grid -->
+					</div><!-- end .col-1-2 -->
+				</div><!-- end .grid -->
+			</div><!-- end .container -->
+		</div><!-- end .top-middle -->
+		<nav class="main-nav">
+			<div class="container">
+				<ul id="main-menu" class="menu">
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href="#">Buy</a>
+						<ul class="submenu">
+							<li><a href="#">All Types</a></li>
+							<li><a href="#">Types</a></li>
+							<li><a href="#">Contracts</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Amenities</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sell</a></li>
+					<li><a href="#">Rent</a></li>
+					<li><a href="#">Find an agent</a></li>
+					<li><a href="#">About</a></li>
+					<div class="clear"></div>
+				</ul>
+
+			</div>
+		</nav><!-- end .main-nav -->
+	</header><!-- end header -->
+	<div class="wrapper">
+		<div id="content" role="main">
+			<div class="container">
+				<div class="grid marginbt">
+					<div class="col-long">
+						<div id="ctprop-result">
+							<div class="contentprop-heading">
+								<h2>All Properties</h2>
+								<ul>
+									<li><a href="#ctprop-listview"><i class="fa fa-th"></i></a></li>
+									<li><a href="#ctprop-thumbview"><i class="fa fa-bars"></i></a></li>
+								</ul>
+							</div><!-- end .contentprop-heading -->
+
+							<div id="ctprop-listview" class="">
+								<div class="ctprop-list">
+									<div class="proplist-image left">
+										<img class="blank" src="asset/img/blank-list2.png">
+										<div class="listimage-inner">
+											<span>
+												<img src="asset/img/listing_1.jpg">
+											</span>
+										</div><!-- end .proplist-image -->
+									</div><!-- end .proplist-image -->
+									<div class="proplist-info right">
+										<div class="listinfo-desc">
+											<h3>Lamb Dale</h3>
+											<div class="desc-content">
+												<span class="desc-subtitle">Pico Blvd / Park / Palo Alto</span>
+												<hr>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+											</div>
+											<ul>
+												<li><i class="fa fa-heart-o"></i></li>
+												<li><i class="fa fa-exchange"></i></li>
+											</ul>
+										</div><!-- end .listinfo-desc -->
+										<div class="listinfo-note">
+											<ul>
+												<li><i class="fa fa-info"></i>Villa</li>
+												<li><i class="fa fa-money"></i>$220,000</li>
+												<li><i class="fa fa-arrows"></i>100 sqft</li>
+												<li>sold</li>
+											</ul>
+											<div class="clear"></div>
+										</div><!-- end .listinfo-note -->
+									</div><!-- end .proplist-info -->
+									<div class="clear"></div>
+								</div><!-- end .ctprop-list -->
+							</div><!-- end #ctprop-thumb -->
+
+							<div id="ctprop-thumbview" class="outer-grid">
+								<div class="thumb-row">
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_1.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_2.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_3.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+								</div><!-- end .thumb-row -->
+								<div class="thumb-row">
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_1.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_2.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+									<div class="col-1-3">
+										<div class="thumbview-inner">
+											<div class="proplist-image">
+												<!-- <img class="blank" src="asset/img/blank-list2.png"> -->
+												<div class="listimage-inner">
+													<span>
+														<img src="asset/img/listing_3.jpg">
+													</span>
+												</div><!-- end .proplist-image -->
+												<span class="promo">Featured</span>
+												<span class="note">Top</span>
+											</div><!-- end .proplist-image -->
+											<div class="thumbview-title">
+												<h3>Lamb Dale</h3>
+												<span>$ 220,000</span>
+												<img src="asset/img/agent_1.jpg">
+											</div><!-- end .thumbview-title -->
+											<div class="thumbview-info">
+												<div class="viewinfo left">
+													<ul>
+														<li>Baths</li>
+														<li>Beds</li>
+														<li>Area</li>
+													</ul>
+													<div class="clear"></div>
+												</div><!-- end .viewinfo left -->
+												<div class="viewinfo right">
+													<ul>
+														<li>1</li>
+														<li>2</li>
+														<li>100 sqft</li>
+													</ul>
+												</div><!-- end .viewinfo right -->
+												<div class="clear"></div>
+											</div><!-- end .thumbview-info -->
+										</div>
+									</div><!-- end .thumbview-inner -->
+								</div><!-- end .thumb-row -->
+							</div><!-- end #ctprop-thumbview -->
+
+							<div class="ctprop-recent">
+
+							</div><!-- end .ctprop-recent -->
+						</div><!-- end #ctprop-result -->
+					</div><!-- end .col-2-3 -->
+					<div class="col-1-4" role="sidebar">
+						<div class="sidebox">
+							<h2>Our Agents</h2>
+							<div class="ftbox-prop">
+								<div class="ftboxprop-image">
+									<span>
+										<img src="asset/img/agent_1.jpg">
+									</span>
+								</div><!-- end ftboxprop-image -->
+								<div class="ftboxprop-info">
+									<h3>John Redmond</h3>
+									<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+									<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+								</div><!-- end ftboxprop-info -->
+							</div><!-- end .ftbox -->
+							<div class="ftbox-prop">
+								<div class="ftboxprop-image">
+									<span>
+										<img src="asset/img/agent_2.jpg">
+									</span>
+								</div><!-- end ftboxprop-image -->
+								<div class="ftboxprop-info">
+									<h3>John Redmond</h3>
+									<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+									<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+								</div><!-- end ftboxprop-info -->
+							</div><!-- end .ftbox -->
+							<div class="ftbox-prop">
+								<div class="ftboxprop-image">
+									<span>
+										<img src="asset/img/agent_1.jpg">
+									</span>
+								</div><!-- end ftboxprop-image -->
+								<div class="ftboxprop-info">
+									<h3>John Redmond</h3>
+									<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+									<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+								</div><!-- end ftboxprop-info -->
+							</div><!-- end .ftbox -->
+						</div>
+						<div class="sidebox">
+							<h2>Featured Properties</h2>
+							<div class="ftbox-prop">
+								<div class="ftboxprop-image">
+									<span>
+										<img src="asset/img/listing_recent_3.jpg">
+									</span>
+								</div><!-- end ftboxprop-image -->
+								<div class="ftboxprop-info">
+									<h3>Apricot Alcove</h3>
+									<span class="info-cat">Apartment</span>
+									<span class="info-price">$ 125,000</span>
+								</div><!-- end ftboxprop-info -->
+							</div><!-- end .ftbox -->
+						</div>
+					</div><!-- end .col-1-3 -->
+				</div><!-- end .grid -->
+			</div><!-- end .container -->
+
+			<div class="ftlogo">
+				<div class="container">
+					<div class="grid">
+						<div class="thumblogo"><img src="asset/img/logo_sweethome.png" alt=""></div>
+						<div class="thumblogo"><img src="asset/img/logo_rooftops.png" alt=""></div>
+						<div class="thumblogo"><img src="asset/img/logo_builders.png" alt=""></div>
+						<div class="thumblogo"><img src="asset/img/logo_reality.png" alt=""></div>
+						<div class="thumblogo"><img src="asset/img/logo_myhouse.png" alt=""></div>
+						<div class="thumblogo"><img src="asset/img/logo_newhome.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end #content -->
+		<footer id="footer" role="footercontent">
+			<div class="container">
+
+					<div class="col-1-4">
+						<h4>Recent Properties</h4>
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/listing_recent_1.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>Lamb Dale</h3>
+								<span class="info-cat">Villa</span>
+								<span class="info-price">$ 220,000</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/listing_recent_2.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>Cotton Ridge</h3>
+								<span class="info-cat">House</span>
+								<span class="info-price">$ 340,000</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/listing_recent_3.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>Apricot Alcove</h3>
+								<span class="info-cat">Apartment</span>
+								<span class="info-price">$ 125,000</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+					</div><!-- end col-1-4 -->
+					<div class="col-1-4">
+						<h4>Quick Links</h4>
+						<div class="ftbox-prop">
+							<ul class="ftbox-quicklink">
+								<li><a href="#">Homepage</a></li>
+								<li><a href="#">Recent Properties</a></li>
+								<li><a href="#">Our Agents</a></li>
+								<li><a href="#">Registered Agencies</a></li>
+								<li><a href="#">My Properties</a></li>
+								<li><a href="#">Blog Grid</a></li>
+								<li><a href="#">Contact Form</a></li>
+							</ul>
+						</div><!-- end .ftbox -->
+					</div><!-- end col-1-4 -->
+					<div class="col-1-4 ftsection-agent">
+						<h4>Our Agents</h4>
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/agent_1.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>John Redmond</h3>
+								<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+								<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/agent_2.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>Clare Collins</h3>
+								<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+								<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+						<div class="ftbox-prop">
+							<div class="ftboxprop-image">
+								<span>
+									<img src="asset/img/agent_1.jpg">
+								</span>
+							</div><!-- end ftboxprop-image -->
+							<div class="ftboxprop-info">
+								<h3>John Penning</h3>
+								<span class="info-email"><i class="fa fa-at"></i>info@realty.com</span>
+								<span class="info-phone"><i class="fa fa-phone"></i>+123 456 789</span>
+							</div><!-- end ftboxprop-info -->
+						</div><!-- end .ftbox -->
+					</div><!-- end col-1-4 -->
+					<div class="col-1-4 ftsection-contact">
+						<h4>Contact</h4>
+						<div class="ftboxprop-info">
+							<div class="info-note">
+								<i class="fa fa-map-marker"></i>
+								<span class="">Address:</span>
+							</div>
+							<div class="info-desc">
+								<p>1900 Pico Blvd<br/>Santa Monica, CA 90405<br/>United States</p>
+							</div>
+						</div><!-- end ftboxprop-info -->
+						<div class="ftboxprop-info">
+							<div class="info-note">
+								<i class="fa fa-phone"></i>
+								<span class="">Phone:</span>
+							</div>
+							<div class="info-desc">
+								<p>+48 123 456 789</p>
+							</div>
+						</div><!-- end ftboxprop-info -->
+						<div class="ftboxprop-info">
+							<div class="info-note">
+								<i class="fa fa-at"></i>
+								<span class="">E-mail:</span>
+							</div>
+							<div class="info-desc">
+								<p>info@realty.com</p>
+							</div>
+						</div><!-- end ftboxprop-info -->
+						<div class="ftboxprop-info">
+							<div class="info-note">
+								<i class="fa fa-skype"></i>
+								<span class="">Skype:</span>
+							</div>
+							<div class="info-desc">
+								<p>info@realty.com</p>
+							</div>
+						</div><!-- end ftboxprop-info -->
+						<div class="contact-socmed">
+							<ul>
+								<li><i class="fa fa-facebook"></i></li>
+								<li><i class="fa fa-twitter"></i></li>
+								<li><i class="fa fa-linkedin"></i></li>
+								<li><i class="fa fa-youtube"></i></li>
+							</ul>
+						</div><!-- end .contact-socmed -->
+					</div><!-- end col-1-4 -->
+
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<i class="fa fa-chevron-up"></i>
+				</div><!-- end .container -->
+			</div><!-- end .copyright -->
+		</footer><!-- end footer -->
+	</div><!-- end .wrapper -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="asset/js/jquery-ui.min.js"></script>
+<script src="asset/js/global.js"></script>
+
+</body>
+</html>
