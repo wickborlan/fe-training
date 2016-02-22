@@ -141,6 +141,7 @@ div[role="main"] {
 	// padding-bottom: 372px;
 }
 
+/* Listing  */
 .contentprop-heading {
 	position: relative;
 	border-bottom: 1px solid #dcdcdc;
@@ -162,6 +163,7 @@ div[role="main"] {
 		}
 	}
 }
+
 #ctprop-listview .ctprop-list {
 	border: 1px solid #e0e0e0;
 }
@@ -203,8 +205,6 @@ div[role="main"] {
 			}
 		}
 	}
-
-
 	.listinfo-note {
 		border-top: 1px solid #e0e0e0; background: #f5f5f5; height: 37px;
 		ul {
@@ -235,7 +235,7 @@ div[role="main"] {
 		}
 
 	   .thumbview-inner {
-			position: relative; box-shadow: 0 5px 10px #aaa;
+			position: relative; box-shadow: 0 5px 10px #aaa; margin-bottom: 30px;
 
 	    	.proplist-image {
 				position: relative; overflow: hidden; text-align: center; width: 100%;z-index: 1; padding-bottom: 80%;
@@ -262,22 +262,11 @@ div[role="main"] {
 
 #ctprop-thumbview .thumbview-inner {
 	.proplist-image .promo {
-		position: absolute;
-	    top: 10px;
-	    left: 10px;
-	    text-transform: uppercase;
-	    background: #fff;
-	    padding: 5px 10px;
+      position: absolute; top: 10px; left: 10px; text-transform: uppercase; background: #fff; padding: 5px 10px;
 	}
 
 	.proplist-image .note {
-		position: absolute;
-	    top: 10px;
-	    right: 10px;
-	    text-transform: uppercase;
-	    background: #d81b60;
-	    color: $color-white;
-	    padding: 5px 10px;
+      position: absolute; top: 10px; right: 10px; text-transform: uppercase; background: #d81b60; color: $color-white; padding: 5px 10px;
 	}
 
 	.thumbview-title {
@@ -286,21 +275,14 @@ div[role="main"] {
 			color: #616161; margin-top: 0;
 		}
 		img {
-			width: 50px;
-			border-radius: 50%;
-			border: 3px solid #fff;
-			position: absolute;
-			right: 10px;
-			top: -20px;
-			z-index: 2;
-		}
+			width: 50px; border-radius: 50%; border: 3px solid #fff; position: absolute; right: 10px; top: -20px; z-index: 2;
+      }
 	}
+
 	.thumbview-info {
 		padding: 20px;
 		ul {
-			list-style: none;
-			padding-left: 0;
-			margin: 0;
+			list-style: none; padding-left: 0; margin: 0;
 		}
 		.viewinfo.right {
 			text-align: right;
@@ -308,10 +290,39 @@ div[role="main"] {
 	}
 }
 
+/* Recent Sales */
+
+.ctprop-recent {
+   margin: 30px 0;
+
+   table tbody tr th {
+      background: #3e6977;
+      display: table-cell;
+      width: 1%;
+      text-align: center;
+      border: 1px solid #3e6977;
+      padding: 5px;
+      color: #fff;
+   }
+}
+
+.ctprop-recent table tbody tr td {
+   text-align: center; padding: 5px; border-bottom: 1px solid #ccc;
+
+   &.info-address {
+      text-align: left;
+   }
+
+   &.info-price {
+      text-align: right;
+   }
+
+}
 
 /* sidebar */
 .sidebox {
 	padding: 20px;
+
 	.ftbox-prop {
 		padding-bottom: 0; border-bottom: 0; margin-bottom: 0;
 	}
@@ -345,8 +356,6 @@ div[role="main"] {
       }
    }
 }
-
-
 
 /* footer */
 #footer {
@@ -476,15 +485,17 @@ div[role="main"] {
 
 }
 
-@media (min-width: 480px) {
-
-
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
 	.grid {
 		margin: 0;
 	}
+
+   .col-long {
+      width: 100%;
+   }
+   div[role="sidebar"] {
+      width: 100%;
+   }
 }
 
 @media (max-width: 767px) {
@@ -494,4 +505,35 @@ div[role="main"] {
 	.outer-grid, .grid {
 		margin: 0;
 	}
+
+   /* listview */
+   #ctprop-listview .proplist-image, #ctprop-listview .proplist-info {
+      width: 100%;
+   }
+
+   /* Partner logo */
+   .ftlogo .thumblogo {
+      width: 100%; padding: 20px 0;
+   }
+
+   /* Recent sales */
+   .ctprop-recent {
+      width: 100%; overflow: auto; margin: 30px 0;
+
+      table {
+         width: 100%;
+
+         tbody tr th {
+            padding: 0 25px;
+         }
+      }
+   }
+}
+
+@media (max-width: 480px) {
+
+   #ctprop-listview .proplist-info .listinfo-note ul li {
+      width: 50%;
+   }
+
 }
