@@ -6,8 +6,8 @@ jQuery(function(){
 			jQuery('> a',this).addClass('toggle-subnav');
 			jQuery('<i class="fa fa-angle-down"></i>').appendTo(jQuery('> a',this));
 		}
-	});	
-	
+	});
+
 	//toggling sub menu
 	jQuery('a.toggle-subnav').on('click', function(e){
 		e.preventDefault();
@@ -16,6 +16,5 @@ jQuery(function(){
 	});
 
 	jQuery("#ctprop-result").tabs();
-	   
-});
 
+});
