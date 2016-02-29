@@ -276,8 +276,8 @@ div[role="main"] {
   list-style: none;
   padding-left: 0;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 5px;
+  right: 0px;
 }
 
 .contentprop-heading ul li {
@@ -286,8 +286,19 @@ div[role="main"] {
   padding: 0 10px;
 }
 
+.contentprop-heading ul li.ui-state-active a {
+  color: #dcdcdc;
+}
+
+.contentprop-heading ul li a {
+  font-size: 18px;
+  color: #3e6977;
+}
+
 #ctprop-listview .ctprop-list {
   border: 1px solid #e0e0e0;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 #ctprop-listview .proplist-image {
@@ -358,20 +369,24 @@ div[role="main"] {
   padding: 0 10px;
 }
 
-#ctprop-listview .proplist-info .listinfo-note {
+#ctprop-listview .listinfo-note {
   border-top: 1px solid #e0e0e0;
   background: #f5f5f5;
   height: 37px;
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  right: 0;
 }
 
-#ctprop-listview .proplist-info .listinfo-note ul {
+#ctprop-listview .listinfo-note ul {
   list-style: none;
   padding-left: 0;
   line-height: 37px;
   margin: 0;
 }
 
-#ctprop-listview .proplist-info .listinfo-note ul li {
+#ctprop-listview .listinfo-note ul li {
   float: left;
   display: inline;
   text-align: center;
@@ -379,7 +394,7 @@ div[role="main"] {
   padding: 0 15px;
 }
 
-#ctprop-listview .proplist-info .listinfo-note ul li i {
+#ctprop-listview .listinfo-note ul li i {
   padding-right: 10px;
 }
 
