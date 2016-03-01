@@ -554,8 +554,12 @@ div[role="main"] {
   margin-bottom: 0;
 }
 
-.sidebox .ftboxprop-image {
+.sidebox .ftbox-prop .ftboxprop-image {
   border-radius: 50%;
+}
+
+.sidebox .ftbox-prop .ftboxprop-image.square {
+  border-radius: 5%;
 }
 
 .sidebox .ftboxprop-info {
@@ -777,6 +781,14 @@ div[role="main"] {
   /* listview */
   #ctprop-listview .proplist-image, #ctprop-listview .proplist-info {
     width: 100%;
+  }
+  #ctprop-listview .listinfo-note {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  #ctprop-listview .listinfo-note ul > li {
+    width: 50%;
   }
   /* Partner logo */
   .ftlogo .thumblogo {

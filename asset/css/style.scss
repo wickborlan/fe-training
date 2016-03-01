@@ -334,21 +334,25 @@ div[role="main"] {
 
 	.ftbox-prop {
 		padding-bottom: 0; border-bottom: 0; margin-bottom: 0;
-	}
-}
 
-.sidebox .ftboxprop-image {
-	border-radius: 50%;
-}
+      .ftboxprop-image {
+         border-radius: 50%;
 
-.sidebox .ftboxprop-info {
-	border-bottom: 1px solid #e0e0e0; margin-left: 80px; padding-bottom: 10px;
-
-	.info-email {
-		display: block; color: #ec407a;
+         &.square {
+            border-radius: 5%;
+         }
+      }
 	}
 
+   .ftboxprop-info {
+      border-bottom: 1px solid #e0e0e0; margin-left: 80px; padding-bottom: 10px;
+
+      .info-email {
+         display: block; color: #ec407a;
+      }
+   }
 }
+
 
 .ftlogo {
    padding: 40px 0; background: #ccc;
@@ -518,6 +522,13 @@ div[role="main"] {
    /* listview */
    #ctprop-listview .proplist-image, #ctprop-listview .proplist-info {
       width: 100%;
+   }
+
+   #ctprop-listview .listinfo-note {
+      position: relative; width: 100%; height: auto;
+      ul > li {
+         width: 50%;
+      }
    }
 
    /* Partner logo */
